@@ -380,83 +380,17 @@ Web Security Implementation
 
 ## 📸 Screenshots
 
-### 1. Login Page with CAPTCHA
+### Login Page with CAPTCHA
 
-![Login Page](screenshots/login-page.png)
-_Login form with username, password, and SVG-based CAPTCHA verification_
+![Screenshot 1](screenshots/Screenshot%202025-11-06%20195126.png)
 
-### 2. CAPTCHA Validation
+### OTP Verification Page
 
-![CAPTCHA Validation](screenshots/captcha-validation.png)
-_Server-side CAPTCHA validation with refresh functionality_
+![Screenshot 2](screenshots/Screenshot%202025-11-06%20195147.png)
 
-### 3. OTP Verification Page
+### Secured Dashboard
 
-![OTP Verification](screenshots/otp-verification.png)
-_6-digit OTP input with countdown timer (5-minute expiry)_
-
-### 4. OTP Display (Demo Mode)
-
-![OTP Display](screenshots/otp-display.png)
-_OTP shown on screen for demonstration purposes_
-
-### 5. Secured Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-_Successful login with welcome message and logout option_
-
-### 6. SSL/HTTPS Connection
-
-![HTTPS Connection](screenshots/https-ssl.png)
-_Browser showing secure HTTPS connection with padlock icon_
-
-### 7. SSL Certificate Details
-
-![SSL Certificate](screenshots/ssl-certificate.png)
-_Self-signed certificate details viewed in browser_
-
-### 8. Server Running
-
-![Server Terminal](screenshots/server-running.png)
-_Terminal showing HTTPS server running with security features enabled_
-
-### 9. Rate Limiting Protection
-
-![Rate Limiting](screenshots/rate-limiting.png)
-_Error message when rate limit is exceeded (100 requests per 15 minutes)_
-
-### 10. Security Headers
-
-![Security Headers](screenshots/security-headers.png)
-_Browser developer tools showing Helmet.js security headers_
-
----
-
-### 📁 Adding Your Screenshots
-
-To add screenshots to this project:
-
-1. Take screenshots of each feature
-2. Save them in the `screenshots/` folder with these names:
-
-   - `login-page.png`
-   - `captcha-validation.png`
-   - `otp-verification.png`
-   - `otp-display.png`
-   - `dashboard.png`
-   - `https-ssl.png`
-   - `ssl-certificate.png`
-   - `server-running.png`
-   - `rate-limiting.png`
-   - `security-headers.png`
-
-3. Commit and push to GitHub:
-
-```powershell
-git add screenshots/
-git commit -m "Add project screenshots"
-git push origin main
-```
+![Screenshot 3](screenshots/Screenshot%202025-11-06%20195243.png)
 
 ---
 
