@@ -256,48 +256,6 @@ const otpExpiry = Date.now() + 5 * 60 * 1000; // 5 minutes
 
 ---
 
-## 🚨 Important Notes
-
-### Development vs Production
-
-**This is a demonstration project. For production use:**
-
-1. **SSL Certificate**: Replace self-signed certificate with a valid CA-signed certificate (Let's Encrypt, etc.)
-
-2. **OTP Delivery**: Integrate with email service (SendGrid, AWS SES) or SMS service (Twilio)
-
-3. **Database**: Use proper database (MongoDB, PostgreSQL) instead of in-memory storage
-
-4. **Session Store**: Use Redis or database-backed session store
-
-5. **Password Security**: Implement proper password hashing (bcrypt, argon2)
-
-6. **User Management**: Add proper user registration and authentication
-
-7. **Environment Variables**: Use `.env` file for sensitive configuration
-
-8. **HTTPS Redirect**: Force HTTPS in production
-
-9. **Security Headers**: Fine-tune Helmet.js configuration
-
-10. **Logging**: Implement proper security logging and monitoring
-
----
-
-## 📦 Dependencies
-
-```json
-{
-  "express": "^4.18.2", // Web framework
-  "express-session": "^1.17.3", // Session management
-  "body-parser": "^1.20.2", // Request body parsing
-  "helmet": "^7.1.0", // Security headers
-  "express-rate-limit": "^7.1.5" // Rate limiting
-}
-```
-
----
-
 ## 🧪 Testing the Security Features
 
 ### Test CAPTCHA
@@ -322,59 +280,6 @@ const otpExpiry = Date.now() + 5 * 60 * 1000; // 5 minutes
 1. Check browser address bar for padlock icon
 2. View certificate details
 3. Verify HTTPS connection
-
----
-
-## 🐛 Troubleshooting
-
-### "Cannot find module" error
-
-```powershell
-npm install
-```
-
-### "EADDRINUSE" error (port already in use)
-
-```powershell
-# Find process using port 3000
-Get-NetTCPConnection -LocalPort 3000
-
-# Kill the process
-Stop-Process -Id <PID> -Force
-```
-
-### SSL Certificate warning in browser
-
-- This is normal for self-signed certificates
-- Click "Advanced" → "Proceed to localhost"
-- For production, use a valid CA-signed certificate
-
-### OpenSSL not found
-
-- Download from: https://slproweb.com/products/Win32OpenSSL.html
-- Or use the PowerShell script instead
-
----
-
-## 📚 Learning Resources
-
-- [Express.js Security Best Practices](https://expressjs.com/en/advanced/best-practice-security.html)
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [Node.js Security Checklist](https://blog.risingstack.com/node-js-security-checklist/)
-- [Let's Encrypt - Free SSL Certificates](https://letsencrypt.org/)
-
----
-
-## 📝 License
-
-MIT License - Feel free to use this for educational purposes.
-
----
-
-## 👨‍💻 Author
-
-CNS Lab - Evaluation 3  
-Web Security Implementation
 
 ---
 
