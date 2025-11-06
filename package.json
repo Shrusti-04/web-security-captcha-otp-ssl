@@ -1,0 +1,29 @@
+{
+  "name": "web-security-demo",
+  "version": "1.0.0",
+  "description": "Web Security Implementation with CAPTCHA, OTP, and SSL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "generate-ssl": "node generate-cert.js",
+    "setup": "npm install && node generate-cert.js"
+  },
+  "keywords": [
+    "security",
+    "captcha",
+    "otp",
+    "ssl",
+    "https",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.17.3",
+    "helmet": "^7.1.0",
+    "node-forge": "^1.3.1"
+  }
+}
